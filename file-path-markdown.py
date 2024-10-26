@@ -2,7 +2,6 @@ import os
 
 
 def generate_markdown_structure(root_dir, skip_folders, indent=''):
-    """Recursively generates a markdown representation of the directory structure with icons."""
     markdown_structure = ''
     items = sorted(os.listdir(root_dir))
 
@@ -26,7 +25,7 @@ def generate_markdown_structure(root_dir, skip_folders, indent=''):
 
 
 folder_path = '/Users/samarthgoudar/Documents' 
-skip_folders = ['_drafts', '_includes', 'node_modules' , '.git']
+skip_folders = ['node_modules' , '.git']
 
 markdown_output = generate_markdown_structure(folder_path, skip_folders)
 
